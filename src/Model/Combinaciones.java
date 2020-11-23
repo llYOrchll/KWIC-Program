@@ -10,10 +10,12 @@ package Model;
  * @author LEFT4
  */
 public class Combinaciones {
-    
-    public int getNumOfCombinations(Separacion s){
-        int numOfCombinations = 0;
+    int numOfCombinations;
+    public void setNumOfCombinations(Separacion s){
         numOfCombinations = s.getSplittedString().length;
+    }
+    
+    public int getNumOfCombinations(){
         return numOfCombinations;
     }
 }

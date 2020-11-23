@@ -12,10 +12,10 @@ package Model;
 public class Separacion {
     
     String[] splittedString;
-    public String[] splitTheString(String inputStr){
-        String[] splittedString = inputStr.split(" ");
-        setSplittedString(splittedString);
-        return getSplittedString();
+    
+    public void splitTheString(Entrada e){
+        String[] splittedString = e.getInputStr().split(" ");
+        setSplittedString(splittedString);      
     }
 
     public String[] getSplittedString() {

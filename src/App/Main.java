@@ -24,6 +24,11 @@ public class Main {
         Separacion s = new Separacion();
         Combinaciones comb = new Combinaciones();
         Alfabetizador alf = new Alfabetizador();
+        
+        s.splitTheString(ent);
+        comb.setNumOfCombinations(s);
+        alf.alfabetizacion(comb, s.getSplittedString());
+        
     }
     
 }

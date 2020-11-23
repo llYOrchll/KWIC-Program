@@ -10,9 +10,9 @@ package Model;
  * @author LEFT4
  */
 public class Alfabetizador {
-    public void alfabetizacion(int numOfCombinations, Separacion s){
-        for(int i = 0; i < numOfCombinations; i++){
-            System.out.println("" + s.getSplittedString());
+    public void alfabetizacion(Combinaciones comb, String[] splittedString){
+        for(int i = 0; i < comb.getNumOfCombinations(); i++){
+            System.out.println("" + splittedString[i]);
         }
     }
 }
